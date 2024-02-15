@@ -1,0 +1,15 @@
+{
+    "plugin.description": "Renames automatically each subclass of a class",
+    "config.phasetimeout.name": "Rename timeout",
+    "config.phasetimeout.description": "Time in seconds after which the renaming is cancelled",
+    "config.nodebug.name": "No debug",
+    "config.nodebug.description": "Disables the debug messages",
+    "ui.renamesubclasses": "Rename subclasses",
+    "ui.pane.namepattern.name": "Name pattern",
+    "ui.pane.namepattern.description": "Pattern to rename the subclasses\nUse %s for the original name, %s for the index of the subclass",
+    "ui.pane.recursive.name": "Rename subclasses recursively",
+    "ui.pane.recursive.description": "Also rename subclasses of subclasses",
+    "ui.pane.rename.button": "Rename",
+    "ui.pane.rename.error.emptypattern": "Pattern cannot be empty",
+    "ui.pane.rename.error.invalidpattern": "Pattern must contain either %s or %s"
+}

@@ -1,0 +1,15 @@
+{
+    "plugin.description": "Renomme automatiquement chaque sous-classe d'une classe",
+    "config.phasetimeout.name": "Temps max de renommage",
+    "config.phasetimeout.description": "Temps en secondes au bout duquel le renommage est annulé",
+    "config.nodebug.name": "Pas de débogage",
+    "config.nodebug.description": "Désactive les messages de débogage",
+    "ui.renamesubclasses": "Renommer les sous-classes",
+    "ui.pane.namepattern.name": "Pattern de nom",
+    "ui.pane.namepattern.description": "Motif pour renommer les sous-classes\nUtilisez %s pour le nom d'origine, %s pour l'indice de la sous-classe",
+    "ui.pane.recursive.name": "Renommer récursivement les sous-classes",
+    "ui.pane.recursive.description": "Renommer aussi les sous-classes des sous-classes",
+    "ui.pane.rename.button": "Renommer",
+    "ui.pane.rename.error.emptypattern": "Le pattern ne peut pas être vide",
+    "ui.pane.rename.error.invalidpattern": "Le pattern doit contenir soit %s soit %s"
+}
