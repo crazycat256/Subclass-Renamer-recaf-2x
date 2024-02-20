@@ -69,7 +69,7 @@ public class SubclassRenamer implements StartupPlugin, ContextMenuInjectorPlugin
 	@Override
 	public void forClass(ContextBuilder builder, ContextMenu menu, String name) {
         menu.getItems().add(new ActionMenuItem(translate("ui.renamesubclasses"),
-                () -> renameSubclasses(name, builder.getResource())));
+                () -> renameSubclasses(name, controller.getWorkspace().getPrimary())));
     }
 
 	public void renameSubclasses(String className, JavaResource resource) {
@@ -77,7 +77,7 @@ public class SubclassRenamer implements StartupPlugin, ContextMenuInjectorPlugin
 			// For some reason, java installed in "C:\Program Files\Common Files\Oracle\Java\javapath\" causes an error
 			controller.getWorkspace().getClassReader("java.lang.Object");
 		} catch (java.lang.IllegalArgumentException e) {
-			Log.error("SubclassRenamer: Failed to perform rename operation. Please use a valid JDK.");
+			Log.error("SubclassRenamer: Failed to perform rename operation.");
 			return;
 		}
         RenameSubclassesPane pane = new RenameSubclassesPane(this, (GuiController) controller, className, resource);

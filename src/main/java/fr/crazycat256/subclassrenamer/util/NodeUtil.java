@@ -1,7 +1,6 @@
 package fr.crazycat256.subclassrenamer.util;
 
 import me.coley.recaf.control.Controller;
-import me.coley.recaf.util.ClassUtil;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.ClassReader;
 
@@ -33,7 +32,11 @@ public class NodeUtil {
                     return true;
                 }
 
-                superClass = getClassNode(controller, superClass).superName;
+                try {
+                    superClass = getClassNode(controller, superClass).superName;
+                } catch (java.lang.IllegalArgumentException e) {
+                    return false;
+                }
 
             }
         }
@@ -49,7 +52,8 @@ public class NodeUtil {
      */
     public static ClassNode getClassNode(Controller controller, String className) {
         ClassReader reader = controller.getWorkspace().getClassReader(className);
-        ClassNode node = ClassUtil.getNode(reader, ClassReader.SKIP_FRAMES);
+        ClassNode node = new ClassNode();
+        reader.accept(node, ClassReader.SKIP_CODE);
         return node;
     }
 
