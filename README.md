@@ -11,7 +11,7 @@ I'll try to make a version for Recaf 4.X when I get time.
 ## Building & modification
 
 Once you've downloaded or cloned the repository, you can compile with `mvn clean package`. 
-This will generate the file `target/auto-renamer-{VERSION}.jar`. To add your plugin to Recaf:
+This will generate the file `target/subclass-renamer-{VERSION}.jar`. To add your plugin to Recaf:
 
 1. Navigate to the `plugins` folder.
     - Windows: `%APPDATA%/Recaf/plugins`
