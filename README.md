@@ -6,7 +6,7 @@ I'll try to make a version for Recaf 4.X when I get time.
 
 ![demo](demo.gif)
 
-## Download: [Here](https://github.com/crazycat256/Subclass-Renamer/releases)
+## Download: [Here](https://github.com/crazycat256/Subclass-Renamer-recaf-2x/releases)
 
 ## Building & modification
 
