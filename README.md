@@ -2,7 +2,7 @@
 
 This plugin allows finding and renaming of classes that extend a specific class. It has options for defining the precise pattern of renaming, and if the renaming should be recursive.
 Tested with Recaf 2.21.13.
-I'll try to make a version for Recaf 4.X when I get time.
+Version for Recaf 4.x is [here](https://github.com/crazycat256/Subclass-Renamer).
 
 ![demo](demo.gif)
 
